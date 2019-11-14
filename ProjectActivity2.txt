@@ -1,0 +1,100 @@
+mysql> tee D:/ProjectActivity2;
+mysql> select * from artifacts;
++----------------+-----------------------+
+| artifacts_Name | artifacts_Description |
++----------------+-----------------------+
+| Add            | This is the artifact  |
+| hvv            | jhv                   |
+| Name           | gfyjgku               |
++----------------+-----------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from lifecycle;
++----------------+-----------------------+
+| lifecycle_Name | lifecycle_Description |
++----------------+-----------------------+
+| Add            | New lifecycle         |
+| First          | First                 |
+| First          | First                 |
++----------------+-----------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from conditions;
++-----------------+-----------------------+
+| conditions_Name | condition_Description |
++-----------------+-----------------------+
+| dasda           | sdax                  |
+| New             | First                 |
+| vaj             | adsx                  |
+| valv            | volt                  |
++-----------------+-----------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from interruptions;
++--------------------+---------------------------+
+| interruptions_Name | interruptions_Description |
++--------------------+---------------------------+
+| Bad                | Bold                      |
+| New                | Lasting                   |
++--------------------+---------------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from defects;
++--------------+---------------------+
+| defects_Name | defects_Description |
++--------------+---------------------+
+| Bug1         | High                |
+| Serious      | Major               |
++--------------+---------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from stes;
+ERROR 1146 (42S02): Table 'dbcsp1.stes' doesn't exist
+mysql> select * from steps;
++------------+-------------------+
+| steps_Name | steps_Description |
++------------+-------------------+
+| Step1      | Success           |
+| Step2      | Failure           |
++------------+-------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from roles;
++------------+-------------------+
+| roles_Name | roles_Description |
++------------+-------------------+
+| BO         | FAST              |
+| FA         | END               |
+| FO         | START             |
+| TY         | THANK YOU         |
++------------+-------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from effortcategories;
++-------------+--------------------+-------------+-------------------+
+| effort_Name | effort_Description | effort_Kind | artifacts_Options |
++-------------+--------------------+-------------+-------------------+
+| First       | this is add        | NULL        | NULL              |
+| VECTOR      | WORK DONE          | NULL        | NULL              |
++-------------+--------------------+-------------+-------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from PLANS;
++------------+-------------------+
+| plans_Name | plans_Description |
++------------+-------------------+
+| Plan1      | SAFE              |
+| Plan2      | RISKY             |
+| Plan3      | CREATION          |
++------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from tasks;
++------------+-------------------+-------------------------+---------------------+------------+
+| tasks_Name | task_Description  | produced_artifacts_Name | used_artifacts_Name | roles_Name |
++------------+-------------------+-------------------------+---------------------+------------+
+| Demo       | This is demo task | Name                    | Name                | FA         |
++------------+-------------------+-------------------------+---------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> notee;
